@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #00695c, #1976d2);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.name {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+}
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  margin-bottom: auto;
+  /* color: #c7365f; */
+  color: #00838f;
+}
+.current {
+  font-size: 2rem;
+  width: 65%;
+  border-radius: 9px;
+  background-color: #00838f;
+  padding: 2rem;
+  opacity: 0.8;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.current-score {
+  font-size: 3.5rem;
+}
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: none;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0.1rem 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.new {
+  margin-top: 3rem;
+}
+.roll {
+  top: 40.1rem;
+}
+.hold {
+  top: 46.1rem;
+}
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  height: 10rem;
+  transform: translateX(-50%);
+  box-shadow: 0rem 2rem 5rem rgba(0, 0, 0.2);
+}
+.back {
+  /* background-color: #29b6f6; */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.gameover {
+  background-color: #000;
+}
+.hidden {
+  display: none;
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
